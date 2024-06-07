@@ -23,3 +23,7 @@ third_party/opencv-mobile-*
 third_party/*.zip
 third_party/*.onnx
 third_party/*.axmodel
+
+# output
+output/
+output1/

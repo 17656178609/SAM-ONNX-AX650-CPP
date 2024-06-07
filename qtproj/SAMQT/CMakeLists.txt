@@ -8,7 +8,7 @@ set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # QtCreator supports the following variables for Android, which are identical to qmake Android variables.
@@ -56,7 +56,8 @@ endif()
 
 target_link_libraries(SAMQT PRIVATE ${QTWidget})
 include_directories(style)
-include_directories(${ONNXRUNTIME_DIR}/include)
+# include_directories(${ONNXRUNTIME_DIR}/include)
+target_include_directories(SAMQT PRIVATE ${ONNXRUNTIME_DIR}/include)
 target_link_directories(SAMQT PRIVATE ${ONNXRUNTIME_DIR}/lib)
 
 find_package(OpenCV REQUIRED)

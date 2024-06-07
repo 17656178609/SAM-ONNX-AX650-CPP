@@ -23,8 +23,6 @@ project(SegmentAnything-AX650)
 
 # 添加 FLAGS 检查代码是否有明显 bug
 include(cmake/overlook.cmake)
-
-add_compile_options(-std=c++17)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 

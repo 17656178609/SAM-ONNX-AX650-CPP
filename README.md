@@ -4,19 +4,7 @@ https://github.com/ZHEQIUSHUI/SAM-ONNX-AX650-CPP/assets/46700201/82b35088-7e9c-4
 
 ## Build
 ```bash
-mkdir build
-cd build
-```
-if x86 onnxruntime
-```bash
-cmake -DONNXRUNTIME_DIR=${onnxruntime_dir} -DOpenCV_DIR=${opencv_cmake_file_dir} ..
-```
-else if ax650
-```bash
-cmake -DONNXRUNTIME_DIR=${onnxruntime_dir} -DOpenCV_DIR=${opencv_cmake_file_dir} -DBSP_MSP_DIR=${msp_out_dir} -DBUILD_WITH_AX650=ON ..
-```
-```bash
-make -j4
+./build_ax650.sh
 ```
 
 ### Build with QT
